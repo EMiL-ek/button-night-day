@@ -1,0 +1,154 @@
+.button {
+    width: 240px;
+    height: 120px;
+    background-color: #353b48;
+    margin: 200px auto 0;
+    border-radius: 60px;
+    border: 10px solid  #131926;
+    position: relative;
+    transition: .5s;
+}
+
+.button:hover {
+    background-color: #25CCF7;
+    border: 10px solid  #1B9CFC;
+    cursor: pointer;
+}
+
+.button-moon {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #FafFec;
+    border: 8px solid #F8EFBA;
+    position: relative;
+    transition: .5s;
+}
+
+.moon-circle {
+    background-color: #FafFec;
+    border: 6px solid #F8EFBA;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 7px;
+    left: 7px;
+}
+
+.circle2 {
+    top: 7px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.circle3 {
+    bottom: 1px;
+    right: 25px;
+    width: 15px;
+    height: 15px;
+}
+
+.button:hover .button-moon {
+    background-color: #fed330;
+    border-color: #f7b731;
+    margin-left: 125px;
+}
+
+.button:hover .moon-circle, .button:hover .button-star {
+    opacity: 0;
+} 
+
+.button-star {
+    position: absolute;
+    background-color: #FafFec;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.star1 {
+    top: 10px;
+    right: 110px;
+    padding: 6px;
+}
+
+.star2 {
+    bottom: 15px;
+    right: 100px;
+    padding: 7px;
+}
+
+.star3 {
+    bottom: 30px;
+    right: 57px;
+    padding: 3px;
+}
+
+.star4 {
+    top: 40px;
+    right: 75px;
+    padding: 3px;
+}
+
+.star5 {
+    top: 10px;
+    right: 30px;
+    padding: 4px;
+}
+
+.star6 {
+    top: 43px;
+    right: 15px;
+    padding: 5px;
+}
+
+.star7 {
+    bottom: 17px;
+    right: 28px;
+    padding: 4px;
+}
+
+.moon-cloud, .moon-cloud span  {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 8px solid #ddd;
+    position: absolute;
+}
+
+.moon-cloud {
+    height: 30px;
+    bottom: 5px;
+    left: -60px;
+    width: 80px;
+    border-top: none;
+    opacity: 0;
+}
+
+.moon-cloud span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.moon-cloud .span1 {
+    top: -20px;
+    width: 35px;
+    height: 25px;
+    border-bottom: none;
+    border-right: none;
+}
+
+.moon-cloud .span2 {
+    top: -15px;
+    width: 35px;
+    height: 30px;
+    right: 0;
+    border-bottom: none;
+    border-left: none;
+}
+
+.button:hover .moon-cloud {
+    opacity: 1;
+}
