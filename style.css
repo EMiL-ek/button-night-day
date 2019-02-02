@@ -125,6 +125,7 @@
     width: 80px;
     border-top: none;
     opacity: 0;
+    transition: 0.5s;
 }
 
 .moon-cloud span {
