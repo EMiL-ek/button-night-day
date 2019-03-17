@@ -1,19 +1,15 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-
-	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Tytuł strony </title>
-
-    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
+    <link href="style.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 </head>
 
 <body>
-
 	<div class="button">
         <div class="button-moon">
             <span class="moon-circle circle1"></span>
@@ -32,6 +28,15 @@
         <span class="button-star star6"></span>
         <span class="button-star star7"></span>
     </div>
-
-</body>
-</html>
+	
+	<script>
+		const button = document.querySelector('.button');
+		button.addEventListener('click', function() {
+			button.classList.toggle('buttonHover');
+			document.querySelector('.button-moon').classList.toggle('button-moonHover');
+			document.querySelectorAll('.moon-circle').forEach((el) => {el.classList.toggle('moon-circleHover');})
+			document.querySelectorAll('.button-star').forEach((el) => {el.classList.toggle('button-starHover');})
+			document.querySelector('.moon-cloud').classList.toggle('moon-cloudHover');
+		});
+	</script>
+</body></html>
