@@ -21,6 +21,10 @@ html {
 }
 
 .button:hover {
+    cursor: pointer;
+}
+
+.buttonHover {
     background-color: #25CCF7;
     border: 10px solid  #1B9CFC;
     cursor: pointer;
@@ -63,13 +67,13 @@ html {
     height: 15px;
 }
 
-.button:hover .button-moon {
+.button-moonHover {
     background-color: #fed330;
     border-color: #f7b731;
     margin-left: 125px;
 }
 
-.button:hover .moon-circle, .button:hover .button-star {
+.moon-circleHover,.button-starHover {
     opacity: 0;
 } 
 
@@ -161,6 +165,6 @@ html {
     border-left: none;
 }
 
-.button:hover .moon-cloud {
+.moon-cloudHover {
     opacity: 1;
 }
